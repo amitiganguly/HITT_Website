@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for proper rendering and character setting -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Human Inquiry into Technology</title>
+</head>
+
+  <!-- Bootstrap CSS for responsiveness and pre-designed components -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for futuristic look -->
+  <style>
+    /* Global body styling */
+    body {
+      font-family: 'Courier Prime', monospace;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #001f3d, #00a3cc);
+      color: #f5f5f5;
+    }
+
+    /* Navbar customizations */
+    .navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      padding: 15px 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #00a3cc;
+      font-family: 'Courier Prime', monospace;
+    }
+
+    .navbar-nav .nav-link {
+      color: #f5f5f5 !important;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      transition: color 0.3s;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #00a3cc !important;
+    }
+
+    /* Hero Section Styling */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://unsplash.com/photos/a-group-of-people-standing-next-to-each-other-HOrhCnQsxnQ');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-family: 'Courier Prime', monospace;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin: 20px 0;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .btn-primary {
+      background-color: #00a3cc;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      box-shadow: 0 8px 15px rgba(0, 163, 204, 0.3);
+    }
+
+    /* Section styling */
+    .section {
+      padding: 60px 0;
+    }
+
+    .card {
+      border: none;
+      background: rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 163, 204, 0.4);
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      color: #00a3cc;
+      font-weight: bold;
+    }
+
+    .card-text {
+      color: #f5f5f5;
+      font-size: 1rem;
+    }
+
+    .footer {
+      background-color: #001f3d;
+      color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #00a3cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Animation for section titles */
+    .section-title {
+      position: relative;
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #00a3cc;
+      margin-bottom: 30px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50%;
+      height: 3px;
+      background-color: #00a3cc;
+      transition: width 0.3s;
+    }
+
+    .section-title:hover::after {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Human Inquiry into Technology</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="symposium.html">AI Symposium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Our Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Human Inquiry into Technology</h1>
+      <p>Shaping the future with responsible innovation</p>
+      <a href="about.html" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Mission Statement Section -->
+  <section id="mission" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Mission Statement</h2>
+      <!--<p>Technology shapes our future, but ethical considerations determine its impact. Our club explores ethical challenges in AI, biotechnology, cybersecurity, and more to ensure responsible innovation.</p>
+    -->
+      <p>At HIIT (Human Inquiry Into Tech), we bridge the gap between technological advancement and human understanding. We're a community of curious minds who believe that the best conversations about technology don't just focus on what's possible, but what's right.
+        Our mission is to explore the human impact of emerging technologies through open dialogue, critical thinking, and diverse perspectives. From artificial intelligence to biotechnology, we tackle the complex questions that arise when innovation meets ethics. We believe that everyone - regardless of their technical background - has valuable insights to share about how technology shapes our lives and society.
+        Together, we're working to ensure that as technology evolves, it does so in harmony with human values, serving not just progress for progress's sake, but the genuine betterment of all people and communities. Through monthly discussions, workshops, and collaborative projects, we're building a future where technological advancement and ethical consideration go hand in hand.</p>
+    </div>
+  </section>
+
+
+
+ </body>
